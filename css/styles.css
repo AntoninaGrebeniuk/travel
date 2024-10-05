@@ -1,0 +1,307 @@
+:root {
+  --primary-text-color: #161414;
+  --secondary-text-color: #979797;
+  --white-color: #ffffff;
+  --icon-color: #ffa800;
+  --black-color: #000000;
+  --accent-color: #7b61ff;
+  --red-color: #ff0000;
+  --light-grey-color: #e5e5e5;
+  --about-us-text: #5b5b5b;
+  --footer-bg-color: #f9f9f9;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+
+.page-header {
+  background-color: #161414; /* template*/
+}
+
+.logo {
+  /*  */
+}
+
+.page-navigation {
+  /*  */
+}
+
+.menu {
+  /*  */
+}
+
+.menu-item {
+  /*  */
+}
+
+.menu-link {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
+.user {
+  /*  */
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  /* text-transform: capitalize; */
+  color: var(--white-color);
+}
+
+.page-hero {
+  background-color: #161414; /* template*/
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.29;
+  color: var(--white-color);
+}
+
+.hero-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--white-color);
+  background: var(--accent-color);
+}
+
+.destinations {
+}
+
+.destinations-title {
+}
+
+.destinations-list {
+}
+
+.destinations-item {
+}
+
+.destinations-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+
+.destinations-place {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--secondary-text-color);
+}
+
+.hotels {
+}
+
+.hotels-wrap {
+}
+
+.hotels-title {
+}
+
+.hotels-link {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--accent-color);
+}
+
+.hotels-list {
+}
+
+.hotel-item {
+}
+
+.hotel-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+
+.hotel-place {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--secondary-text-color);
+}
+
+.tours {
+}
+
+.tours-wrap {
+}
+
+.tours-title {
+}
+
+.tours-link {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--accent-color);
+}
+
+.tours-list {
+}
+
+.tours-item {
+}
+
+.tours-subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+
+.tours-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+}
+
+.tours-span {
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--secondary-text-color);
+}
+
+.activities {
+}
+
+.activities-wrap {
+}
+
+.activities-title {
+}
+
+.activities-link {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--accent-color);
+}
+
+.activities-list {
+}
+
+.activities-item {
+}
+
+.activities-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+
+.about {
+}
+
+.about-wrap {
+}
+
+.about-title {
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--about-us-text);
+}
+
+.about-link {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--accent-color);
+}
+
+.page-footer {
+  background-color: var(--footer-bg-color);
+}
+
+.footer-logo {
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--secondary-text-color);
+}
+
+.footer-social-list {
+}
+
+.footer-social-item {
+}
+
+.footer-social-link {
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--primary-text-color);
+}
+
+.footer-list {
+}
+
+.footer-item {
+}
+
+.footer-link {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--secondary-text-color);
+}
