@@ -9,6 +9,7 @@
   --light-grey-color: #e5e5e5;
   --about-us-text: #5b5b5b;
   --footer-bg-color: #f9f9f9;
+  --link-bg-color: #f6f4ff;
 }
 
 body {
@@ -52,6 +53,18 @@ ul {
   margin: 0;
 }
 
+.section {
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .title {
   font-weight: 600;
   font-size: 32px;
@@ -59,35 +72,62 @@ ul {
   color: var(--primary-text-color);
 }
 
+.title-section-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.view-link {
+  display: block;
+  padding: 16px;
+  background-color: var(--link-bg-color);
+  border-radius: 12px;
+}
+
 .page-header {
+  padding-top: 32px;
   background-color: #161414; /* template*/
 }
 
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
-  /*  */
+  display: block;
 }
 
 .page-navigation {
   /*  */
 }
 
-.menu {
-  /*  */
+.menu-list {
+  display: flex;
 }
 
 .menu-item {
-  /*  */
+  padding: 14px 24px;
 }
 
 .menu-link {
+  display: block;
   font-size: 14px;
   line-height: 1.43;
   color: var(--white-color);
   opacity: 0.7;
+  height: 100%;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
 }
 
 .user {
-  /*  */
+  display: flex;
 }
 
 .user-name {
@@ -95,14 +135,24 @@ ul {
   font-size: 14px;
   line-height: 1.43;
   /* text-transform: capitalize; */
+  text-align: end;
   color: var(--white-color);
 }
 
+.user-name span {
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
 .page-hero {
+  padding-top: 184px;
+  padding-bottom: 184px;
+  text-align: center;
   background-color: #161414; /* template*/
 }
 
 .hero-title {
+  margin-bottom: 32px;
   font-weight: 600;
   font-size: 48px;
   line-height: 1.29;
@@ -110,23 +160,40 @@ ul {
 }
 
 .hero-link {
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
+  width: 272px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 27px;
   color: var(--white-color);
   background: var(--accent-color);
+  border-radius: 12px;
 }
 
 .destinations {
+  padding-top: 120px;
 }
 
 .destinations-title {
+  margin-bottom: 64px;
 }
 
 .destinations-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
 }
 
 .destinations-item {
+  width: calc((100% - 160px) / 6);
+}
+
+.destinations-img {
+  margin-bottom: 8px;
+  border-radius: 24px;
 }
 
 .destinations-name {
@@ -158,15 +225,25 @@ ul {
 }
 
 .hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
 }
 
 .hotel-item {
+  width: calc((100% - 96px) / 4);
+}
+
+.hotel-img {
+  border-radius: 24px;
+  margin-bottom: 10px;
 }
 
 .hotel-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 12px;
   color: var(--primary-text-color);
 }
 
@@ -192,9 +269,21 @@ ul {
 }
 
 .tours-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
 }
 
 .tours-item {
+  display: flex;
+  column-gap: 32px;
+  width: calc((100% - 32px) / 2);
+}
+
+.tours-description-thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .tours-subtitle {
@@ -211,9 +300,14 @@ ul {
 }
 
 .tours-span {
+  display: inline-block;
   font-size: 12px;
   line-height: 1.33;
   color: var(--secondary-text-color);
+}
+
+.tours-span:not(:last-child) {
+  margin-right: 24px;
 }
 
 .activities {
@@ -232,9 +326,16 @@ ul {
 }
 
 .activities-list {
+  display: flex;
+  column-gap: 32px;
+}
+
+.activities-list img {
+  margin-bottom: 16px;
 }
 
 .activities-item {
+  width: calc((100% - 96px) / 3);
 }
 
 .activities-subtitle {
@@ -244,41 +345,74 @@ ul {
   color: var(--primary-text-color);
 }
 
-.about {
+.about-thumb {
+  display: flex;
+  column-gap: 32px;
+  width: 1128px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.about-wrap {
+.about-text-wrap {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  width: 548px;
 }
 
 .about-title {
+  margin-bottom: 32px;
 }
 
 .about-text {
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 2;
   color: var(--about-us-text);
 }
 
 .about-link {
+  display: block;
+  padding: 12px 10px;
+  width: 133px;
   font-size: 16px;
   line-height: 1;
   color: var(--accent-color);
+  background-color: var(--link-bg-color);
+  border-radius: 12px;
+}
+
+.about-img {
+  width: 548px;
+  border-radius: 24px;
+  overflow: hidden;
 }
 
 .page-footer {
   background-color: var(--footer-bg-color);
+  padding-top: 120px;
+}
+
+.footer-thumb {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 1.43;
   color: var(--secondary-text-color);
 }
 
 .footer-social-list {
+  display: flex;
+  gap: 32px;
 }
 
 .footer-social-item {
@@ -288,6 +422,7 @@ ul {
 }
 
 .footer-title {
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.56;
@@ -298,6 +433,10 @@ ul {
 }
 
 .footer-item {
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .footer-link {
