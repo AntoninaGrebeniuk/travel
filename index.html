@@ -73,26 +73,68 @@
             >Discover on 3D Globe</a
           >
 
-          <!-- <div class="hero-search-row">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <p class="">Location</p>
-              <p class="">Explore nearby destinations</p>
-            </li>
-            <li class="hero-item">
-              <p class="">Activity</p>
-              <p class="">All Activities</p>
-            </li>
-            <li class="hero-item">
-              <p class="">When</p>
-              <p class="">Choose a Date</p>
-            </li>
-            <li class="hero-item">
-              <p class="">Guests</p>
-              <p class="">1 guest</p>
-            </li>
-          </ul>
-        </div> -->
+          <div class="form-wrap">
+            <form class="hero-search-form">
+              <div class="input-thumb">
+                <svg class="hero-form-icon">
+                  <use href="./images/icons/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <input
+                  class="hero-form-input"
+                  id="location"
+                  name="location"
+                  placeholder="Location"
+                />
+                <label class="hero-form-label" for="location"
+                  >Explore nearby destinations</label
+                >
+              </div>
+              <div class="input-thumb">
+                <svg class="hero-form-icon">
+                  <use href="./images/icons/sprite.svg#icon-riding"></use>
+                </svg>
+                <input
+                  class="hero-form-input"
+                  id="activity"
+                  name="activity"
+                  placeholder="Activity"
+                />
+                <label class="hero-form-label" for="activity"
+                  >All Activities</label
+                >
+              </div>
+              <div class="input-thumb">
+                <svg class="hero-form-icon">
+                  <use href="./images/icons/sprite.svg#icon-calendar"></use>
+                </svg>
+                <input
+                  class="hero-form-input"
+                  id="date"
+                  name="date"
+                  placeholder="When"
+                />
+                <label class="hero-form-label" for="date">Choose a Date</label>
+              </div>
+              <div class="input-thumb">
+                <svg class="hero-form-icon">
+                  <use href="./images/icons/sprite.svg#icon-group"></use>
+                </svg>
+                <input
+                  class="hero-form-input"
+                  id="guest"
+                  name="guest"
+                  placeholder="Guests"
+                />
+                <label class="hero-form-label" for="guest">1 guest</label>
+              </div>
+
+              <button class="hero-form-btn">
+                <svg class="hero-btn-icon">
+                  <use href="./images/icons/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -534,15 +576,30 @@
         </div>
 
         <div>
-          <p class="footer-sub-text">
+          <h2 class="footer-sub-text footer-title">
             Subscribe on our destination review newsletters
-          </p>
-          <form action="">
-            <label>
-              <input type="text" />
+          </h2>
+          <form class="footer-form">
+            <label class="form-label" for="subscribe">
+              <svg class="subscribe-icon">
+                <use href="./images/icons/sprite.svg#icon-mail"></use>
+              </svg>
+              <input
+                class="form-input"
+                id="subscribe"
+                type="email"
+                name="subscribe"
+                placeholder="Your Email"
+              />
             </label>
 
-            <button type="submit"></button>
+            <button class="form-button-submit" type="submit">
+              <svg class="form-icon-submit">
+                <use
+                  href="./images/icons/sprite.svg#icon-arrow-right-submit"
+                ></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
